@@ -1,0 +1,76 @@
+{
+  "transformer": {
+    "parameters": 87819,
+    "d_model": 64,
+    "heads": 4,
+    "layers": 2,
+    "epochs_trained": 38,
+    "safe_dev_perplexity": 3.5354
+  },
+  "ngram_safe_dev_perplexity": 3.8546,
+  "aucs": {
+    "ngram_full": {
+      "auc": 0.605598575203754,
+      "ci_low": 0.5939616701139868,
+      "ci_high": 0.6169912401162918
+    },
+    "ngram_eos": {
+      "auc": 0.7875457502582177,
+      "ci_low": 0.7787122864970518,
+      "ci_high": 0.7965757198933074
+    },
+    "ngram_actions": {
+      "auc": 0.4491000618997664,
+      "ci_low": 0.43483159880236016,
+      "ci_high": 0.46350428283563677
+    },
+    "transformer_full": {
+      "auc": 0.6377060984029191,
+      "ci_low": 0.6267211052963974,
+      "ci_high": 0.6489977796474293
+    },
+    "transformer_eos": {
+      "auc": 0.792318195756373,
+      "ci_low": 0.7828919774995254,
+      "ci_high": 0.8011498824615607
+    },
+    "transformer_actions": {
+      "auc": 0.4546171801344559,
+      "ci_low": 0.44017689864530285,
+      "ci_high": 0.4696710021835738
+    },
+    "ngram_window": {
+      "auc": 0.5054548633857113,
+      "ci_low": 0.48978082240516974,
+      "ci_high": 0.5207987541288495
+    },
+    "transformer_window": {
+      "auc": 0.500621984924406,
+      "ci_low": 0.4850133400800736,
+      "ci_high": 0.5162982188836133
+    }
+  },
+  "paired_differences_transformer_minus_ngram": {
+    "transformer_full - ngram_full": {
+      "diff": 0.0321075231991651,
+      "ci_low": 0.028150477091160198,
+      "ci_high": 0.035908515206021265
+    },
+    "transformer_eos - ngram_eos": {
+      "diff": 0.004772445498155253,
+      "ci_low": -0.0026324596086244323,
+      "ci_high": 0.012058594634061373
+    },
+    "transformer_actions - ngram_actions": {
+      "diff": 0.005517118234689478,
+      "ci_low": 0.0027504996150613,
+      "ci_high": 0.007922837614838444
+    },
+    "transformer_window - ngram_window": {
+      "diff": -0.004832878461305312,
+      "ci_low": -0.011268053003682218,
+      "ci_high": 0.002091474361522698
+    }
+  },
+  "matched_window_test_wallets": 12779
+}

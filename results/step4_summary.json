@@ -1,0 +1,67 @@
+{
+  "vocabulary": {
+    "sentence": [
+      "SUPPLY_STABLE",
+      "SUPPLY_VOL",
+      "BORROW_STABLE",
+      "BORROW_VOL",
+      "REPAY_STABLE",
+      "REPAY_VOL",
+      "WITHDRAW_STABLE",
+      "WITHDRAW_VOL",
+      "<BOS>",
+      "<EOS>"
+    ],
+    "sentence_base": [
+      "SUPPLY",
+      "BORROW",
+      "REPAY",
+      "WITHDRAW",
+      "<BOS>",
+      "<EOS>"
+    ]
+  },
+  "max_len": 300,
+  "sentences": {
+    "main": {
+      "safe": 71285,
+      "liquidated": 10056
+    },
+    "new": {
+      "safe": 71285,
+      "liquidated": 11513
+    },
+    "old": {
+      "safe": 57565,
+      "liquidated": 11513
+    }
+  },
+  "main_sample": {
+    "safe": {
+      "tokens": 1805424,
+      "length_after_cap": {
+        "median": 10.0,
+        "mean": 25.3,
+        "p90": 57.0,
+        "max": 300
+      },
+      "truncated_wallets": 794
+    },
+    "liquidated": {
+      "tokens": 256286,
+      "length_after_cap": {
+        "median": 9.0,
+        "mean": 25.5,
+        "p90": 62.0,
+        "max": 300
+      },
+      "truncated_wallets": 123
+    }
+  },
+  "checks": {
+    "unexpected_tokens": [],
+    "liquidation_token_in_corpus": false,
+    "visible_actions_in_or_after_liquidation_block": 0,
+    "empty_sentences": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "source": "On-Chain DeFi Liquidation-Risk \u2014 Behavioral Archetypes & Early Prediction/raw",
+  "events": {
+    "Supply": {
+      "file": "raw_supply.csv",
+      "rows": 1425419,
+      "missing_key_values": 0,
+      "first_block": 16496817,
+      "last_block": 25483673,
+      "transactions": 1366608
+    },
+    "Withdraw": {
+      "file": "raw_withdraw.csv",
+      "rows": 1186852,
+      "missing_key_values": 0,
+      "first_block": 16496928,
+      "last_block": 25483678,
+      "transactions": 1127362
+    },
+    "Borrow": {
+      "file": "raw_borrow.csv",
+      "rows": 806744,
+      "missing_key_values": 0,
+      "first_block": 16496939,
+      "last_block": 25483666,
+      "transactions": 801403
+    },
+    "Repay": {
+      "file": "raw_repay.csv",
+      "rows": 655043,
+      "missing_key_values": 0,
+      "first_block": 16497341,
+      "last_block": 25483655,
+      "transactions": 612533
+    },
+    "LiquidationCall": {
+      "file": "raw_liquidationcall.csv",
+      "rows": 27157,
+      "missing_key_values": 0,
+      "first_block": 16521648,
+      "last_block": 25480666,
+      "transactions": 21227
+    }
+  },
+  "total_rows": 4101215,
+  "block_range": [
+    16496817,
+    25483678
+  ],
+  "checks": {
+    "duplicate_logs": 0,
+    "blocks_before_pool_deploy": 0,
+    "missing_key_values": 0,
+    "liquidations_public_node": 27157,
+    "liquidations_match": true
+  },
+  "dates_utc": [
+    "2023-01-27 08:00 UTC",
+    "2026-07-07 22:31 UTC"
+  ]
+}

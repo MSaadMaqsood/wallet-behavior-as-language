@@ -1,0 +1,10 @@
+comparison,diff,ci_low,ci_high
+ngram - unigram,0.2167,0.2027,0.2311
+ngram - ngram_shuffled,0.2082,0.1945,0.2219
+ngram_actions - unigram_actions,0.1492,0.1377,0.1606
+logreg_ngrams - logreg_counts,0.0431,0.0368,0.0499
+ngram - ngram_actions,0.1565,0.1471,0.1663
+ngram - ngram_base_vocab,-0.0427,-0.0508,-0.0349
+win_ngram - win_unigram,0.1120,0.0892,0.1364
+win_ngram - win_ngram_shuffled,-0.0163,-0.0329,0.0010
+win_logreg_ngrams - win_logreg_counts,0.0958,0.0806,0.1110

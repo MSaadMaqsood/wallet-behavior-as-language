@@ -1,0 +1,200 @@
+{
+  "test_wallets": {
+    "safe": 14257,
+    "liquidated": 2012
+  },
+  "matched_windows": {
+    "window": 4,
+    "test_safe": 11234,
+    "test_liquidated": 1545
+  },
+  "aucs": {
+    "ngram": {
+      "auc": 0.605598575203754,
+      "ci_low": 0.5939616701139868,
+      "ci_high": 0.6169912401162918
+    },
+    "ngram_eos_only": {
+      "auc": 0.7875457502582177,
+      "ci_low": 0.7787122864970518,
+      "ci_high": 0.7965757198933074
+    },
+    "ngram_actions": {
+      "auc": 0.4491000618997664,
+      "ci_low": 0.43483159880236016,
+      "ci_high": 0.46350428283563677
+    },
+    "ngram_shuffled": {
+      "auc": 0.39743385447293794,
+      "ci_low": 0.38435871758297796,
+      "ci_high": 0.4107387270506162
+    },
+    "unigram": {
+      "auc": 0.3889197953891298,
+      "ci_low": 0.3757672014312386,
+      "ci_high": 0.40164768996318784
+    },
+    "unigram_actions": {
+      "auc": 0.29987102356053763,
+      "ci_low": 0.28604577948943777,
+      "ci_high": 0.31316470216716114
+    },
+    "ngram_base_vocab": {
+      "auc": 0.6483395516638543,
+      "ci_low": 0.6369433561707541,
+      "ci_high": 0.6600015922038087
+    },
+    "length": {
+      "auc": 0.44774908102064476,
+      "ci_low": 0.4324913895144946,
+      "ci_high": 0.4625480471836861
+    },
+    "logreg_ngrams": {
+      "auc": 0.8506620200240655,
+      "ci_low": 0.8417373350728204,
+      "ci_high": 0.858522090261266
+    },
+    "logreg_counts": {
+      "auc": 0.8075420661135244,
+      "ci_low": 0.7973943866610257,
+      "ci_high": 0.8172503525699978
+    },
+    "win_ngram": {
+      "auc": 0.513738892509044,
+      "ci_low": 0.49943264437073537,
+      "ci_high": 0.5285326804954678
+    },
+    "win_unigram": {
+      "auc": 0.40174107382063123,
+      "ci_low": 0.3861073065872039,
+      "ci_high": 0.4168522812451567
+    },
+    "win_ngram_shuffled": {
+      "auc": 0.5300217266930659,
+      "ci_low": 0.5164555832876733,
+      "ci_high": 0.5441762624787329
+    },
+    "win_logreg_ngrams": {
+      "auc": 0.7252865060009115,
+      "ci_low": 0.7128546619053463,
+      "ci_high": 0.7384748910064396
+    },
+    "win_logreg_counts": {
+      "auc": 0.6294814689341707,
+      "ci_low": 0.6152685199749028,
+      "ci_high": 0.6449591040086929
+    }
+  },
+  "paired_differences": {
+    "ngram - unigram": {
+      "diff": 0.21667877981462424,
+      "ci_low": 0.20270254568541607,
+      "ci_high": 0.23114841366683808
+    },
+    "ngram - ngram_shuffled": {
+      "diff": 0.2081647207308161,
+      "ci_low": 0.1945383914511111,
+      "ci_high": 0.2218744744655446
+    },
+    "ngram_actions - unigram_actions": {
+      "diff": 0.1492290383392288,
+      "ci_low": 0.13770480722664094,
+      "ci_high": 0.16063977666929616
+    },
+    "logreg_ngrams - logreg_counts": {
+      "diff": 0.04311995391054113,
+      "ci_low": 0.03677163016151541,
+      "ci_high": 0.04991063081774477
+    },
+    "ngram - ngram_actions": {
+      "diff": 0.15649851330398762,
+      "ci_low": 0.1471227720650913,
+      "ci_high": 0.16625981250394795
+    },
+    "ngram - ngram_base_vocab": {
+      "diff": -0.04274097646010022,
+      "ci_low": -0.05077334443224929,
+      "ci_high": -0.03492836947941308
+    },
+    "win_ngram - win_unigram": {
+      "diff": 0.1119978186884128,
+      "ci_low": 0.0891715409128437,
+      "ci_high": 0.13643045729762793
+    },
+    "win_ngram - win_ngram_shuffled": {
+      "diff": -0.016282834184021877,
+      "ci_low": -0.03293350398956468,
+      "ci_high": 0.000959192303991556
+    },
+    "win_logreg_ngrams - win_logreg_counts": {
+      "diff": 0.09580503706674082,
+      "ci_low": 0.08061211976126569,
+      "ci_high": 0.11096548604473361
+    }
+  },
+  "logistic_regression": {
+    "ngrams": {
+      "C": 0.01,
+      "dev_auc": 0.8572,
+      "features": 585
+    },
+    "counts": {
+      "C": 0.1,
+      "dev_auc": 0.8164,
+      "features": 9
+    },
+    "win_logreg_ngrams": {
+      "C": 0.1,
+      "dev_auc": 0.7361,
+      "features": 578
+    },
+    "win_logreg_counts": {
+      "C": 0.1,
+      "dev_auc": 0.6523,
+      "features": 8
+    }
+  },
+  "leakage_screen_top5": [
+    {
+      "feature": "share of BORROW_STABLE",
+      "auc": 0.7316796508396356,
+      "distance_from_chance": 0.2316796508396356,
+      "suspicious": false
+    },
+    {
+      "feature": "share of SUPPLY_VOL",
+      "auc": 0.6921726722023918,
+      "distance_from_chance": 0.19217267220239176,
+      "suspicious": false
+    },
+    {
+      "feature": "share of REPAY_STABLE",
+      "auc": 0.31220475709876133,
+      "distance_from_chance": 0.18779524290123867,
+      "suspicious": false
+    },
+    {
+      "feature": "share of WITHDRAW_VOL",
+      "auc": 0.33100721810425277,
+      "distance_from_chance": 0.16899278189574723,
+      "suspicious": false
+    },
+    {
+      "feature": "last action is WITHDRAW_VOL",
+      "auc": 0.33163520450170075,
+      "distance_from_chance": 0.16836479549829925,
+      "suspicious": false
+    }
+  ],
+  "verdict": {
+    "H3_lm_beats_bag_of_actions": true,
+    "H3_lm_beats_shuffled": true,
+    "H3_supervised": true,
+    "H3_matched_windows_lm": true,
+    "H3_matched_windows_supervised": true,
+    "H4_no_suspicious_single_feature": true,
+    "H4_perplexity_without_end_token": false,
+    "H4_perplexity_matched_windows": false,
+    "H4_supervised_matched_windows": true
+  }
+}

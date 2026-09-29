@@ -1,0 +1,9 @@
+score,model,auc,ci_low,ci_high
+full score,ngram,0.6056,0.5940,0.6170
+full score,transformer,0.6377,0.6267,0.6490
+end token only,ngram,0.7875,0.7787,0.7966
+end token only,transformer,0.7923,0.7829,0.8011
+actions only (no end token),ngram,0.4491,0.4348,0.4635
+actions only (no end token),transformer,0.4546,0.4402,0.4697
+matched 4-action windows,ngram,0.5055,0.4898,0.5208
+matched 4-action windows,transformer,0.5006,0.4850,0.5163

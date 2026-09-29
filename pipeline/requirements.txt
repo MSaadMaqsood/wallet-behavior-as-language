@@ -1,0 +1,4 @@
+
+web3==7.16.0
+python-dotenv==1.2.2
+pandas==3.0.3

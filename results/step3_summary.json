@@ -1,0 +1,69 @@
+{
+  "wallets_main_sample": {
+    "liquidated": 10056,
+    "safe": 71285,
+    "excluded_dust_liquidations": 1457
+  },
+  "wallets_new_sample": {
+    "liquidated": 11513,
+    "safe": 71285,
+    "safe_pool_never_liquidated_borrowers": 71285,
+    "safe_ratio": "all"
+  },
+  "wallets_old_sample": {
+    "liquidated": 11513,
+    "safe": 57565,
+    "safe_never_borrowed": 20349
+  },
+  "timeline_rows": 3505633,
+  "actions_visible_to_models": 3178254,
+  "new_sample_wallets_reordered_vs_old_timelines": 24790,
+  "data_window_utc": [
+    "2023-01-27 08:00:12+00:00",
+    "2026-07-07 22:31:23+00:00"
+  ],
+  "sentence_length_new": {
+    "safe": {
+      "wallets": 71285,
+      "median": 10.0,
+      "mean": 34.8,
+      "p90": 57.0,
+      "p99": 321.2,
+      "max": 33218
+    },
+    "liquidated": {
+      "wallets": 11513,
+      "median": 8.0,
+      "mean": 28.7,
+      "p90": 57.0,
+      "p99": 315.9,
+      "max": 6425
+    }
+  },
+  "sentence_length_old": {
+    "safe": {
+      "wallets": 57565,
+      "median": 8.0,
+      "mean": 29.2,
+      "p90": 42.0,
+      "p99": 257.4,
+      "max": 62179
+    }
+  },
+  "first_liquidation_size": {
+    "stablecoin_debt_share": 0.9,
+    "stablecoin_debt_covered_below": {
+      "$1": 0.084,
+      "$10": 0.141,
+      "$100": 0.22,
+      "$1,000": 0.372
+    },
+    "dust_liquidations_below_$10": 1457
+  },
+  "checks": {
+    "liquidated_with_empty_history": 0,
+    "liquidated_without_borrow_before": 0,
+    "timestamp_max_error_seconds": 559,
+    "safe_first_borrow_last_90_days": 3946
+  }
+}

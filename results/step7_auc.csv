@@ -1,0 +1,16 @@
+model,description,uses_order,uses_labels,test_wallets,auc,ci_low,ci_high
+ngram,full score: main model,True,False,all,0.6056,0.5940,0.6170
+ngram_eos_only,end token only,True,False,all,0.7875,0.7787,0.7966
+ngram_actions,actions only (no end token),True,False,all,0.4491,0.4348,0.4635
+ngram_shuffled,n-gram LM on shuffled sentences,False,False,all,0.3974,0.3844,0.4107
+unigram,unigram LM (bag of actions),False,False,all,0.3889,0.3758,0.4016
+unigram_actions,"unigram LM, actions only",False,False,all,0.2999,0.2860,0.3132
+ngram_base_vocab,"n-gram LM, 4 actions (no asset class)",True,False,all,0.6483,0.6369,0.6600
+length,sentence length only,False,False,all,0.4477,0.4325,0.4625
+win_ngram,n-gram LM,True,False,matched windows,0.5137,0.4994,0.5285
+win_ngram_shuffled,n-gram LM on shuffled windows,False,False,matched windows,0.5300,0.5165,0.5442
+win_unigram,unigram LM (bag of actions),False,False,matched windows,0.4017,0.3861,0.4169
+win_logreg_ngrams,"logistic regression, 1-3 action sequences",True,True,matched windows,0.7253,0.7129,0.7385
+win_logreg_counts,"logistic regression, action counts",False,True,matched windows,0.6295,0.6153,0.6450
+logreg_ngrams,"logistic regression, 1-3 action sequences",True,True,all,0.8507,0.8417,0.8585
+logreg_counts,"logistic regression, action counts",False,True,all,0.8075,0.7974,0.8173

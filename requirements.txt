@@ -1,0 +1,22 @@
+# Python 3.14 on Windows. Versions are pinned for reproducibility, and because
+# Windows 11 Smart App Control blocked compiled files of newer builds on
+# 2026-09-28: pandas 3.0.6, scipy 1.18.1, scikit-learn 1.9.1, pyarrow 25.0.1.
+# Verify an installation with:  python src/step0_check_env.py
+
+# data + statistics
+numpy==2.5.3
+pandas==2.3.3
+pyarrow==22.0.0
+scipy==1.16.2
+scikit-learn==1.7.2
+
+# language models
+nltk==3.10.3
+# Transformer (Step 9). CPU build:
+#   pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu
+torch==2.14.0
+
+# figures + dashboard
+matplotlib==3.11.2
+plotly==7.1.0
+streamlit==1.64.0

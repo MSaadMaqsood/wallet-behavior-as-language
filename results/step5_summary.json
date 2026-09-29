@@ -1,0 +1,68 @@
+{
+  "split_shares": {
+    "train": 0.6,
+    "dev": 0.2,
+    "test": 0.2
+  },
+  "split_counts": {
+    "liquidated": {
+      "dev": 2011,
+      "test": 2012,
+      "train": 6033
+    },
+    "liquidated_dust": {
+      "dev": 291,
+      "test": 292,
+      "train": 874
+    },
+    "old_only_never_borrowed": {
+      "dev": 4070,
+      "test": 4070,
+      "train": 12209
+    },
+    "safe": {
+      "dev": 14257,
+      "test": 14257,
+      "train": 42771
+    }
+  },
+  "lm_training": {
+    "safe_train_sentences": 42771,
+    "safe_dev_sentences": 14257
+  },
+  "chosen": {
+    "sentence": {
+      "n": 6,
+      "dev_perplexity": 3.8546,
+      "discounts": {
+        "6": 0.569,
+        "5": 0.471,
+        "4": 0.508,
+        "3": 0.75,
+        "2": 0.75,
+        "1": 0.75
+      },
+      "note": "8 action+class tokens"
+    },
+    "sentence_base": {
+      "n": 7,
+      "dev_perplexity": 2.9865,
+      "discounts": {
+        "7": 0.426,
+        "6": 0.676,
+        "5": 0.922,
+        "4": 0.75,
+        "3": 0.75,
+        "2": 0.75,
+        "1": 0.75
+      },
+      "note": "4 action tokens"
+    }
+  },
+  "largest_n_tried": 10,
+  "checks": {
+    "probabilities_sum_to_one_max_error": 2.220446049250313e-16,
+    "max_difference_to_nltk_n3": 0.0,
+    "liquidated_wallets_in_lm_training": 0
+  }
+}

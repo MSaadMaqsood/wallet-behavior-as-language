@@ -1,0 +1,70 @@
+{
+  "model": {
+    "n": 6,
+    "trained_on": "safe train wallets of the main sample"
+  },
+  "results": {
+    "main": {
+      "safe_wallets": 14257,
+      "liquidated_wallets": 2012,
+      "median_safe": 3.6048227775768793,
+      "iqr_safe": [
+        2.8358479263710525,
+        4.80268133360039
+      ],
+      "median_liquidated": 3.9972598416970495,
+      "iqr_liquidated": [
+        3.502733463953616,
+        5.266181421444903
+      ],
+      "U": 17371646.0,
+      "p_value": 1.48130543666239e-53,
+      "rank_biserial": 0.21119715040750786,
+      "auc": 0.605598575203754,
+      "ci_low": 0.5939616701139868,
+      "ci_high": 0.6169912401162918
+    },
+    "with_dust": {
+      "safe_wallets": 14257,
+      "liquidated_wallets": 2304,
+      "median_safe": 3.6048227775768793,
+      "iqr_safe": [
+        2.8358479263710525,
+        4.80268133360039
+      ],
+      "median_liquidated": 3.8615812091122046,
+      "iqr_liquidated": [
+        3.408430189193993,
+        5.124828636905308
+      ],
+      "U": 19157417.0,
+      "p_value": 4.950308255244842e-38,
+      "rank_biserial": 0.16642366956193055,
+      "auc": 0.5832118347809653,
+      "ci_low": 0.5712123164979143,
+      "ci_high": 0.5949358834086375
+    },
+    "old_study": {
+      "safe_wallets": 11531,
+      "liquidated_wallets": 2304,
+      "median_safe": 3.5242355054847723,
+      "iqr_safe": [
+        2.6854124904068066,
+        4.624611963747364
+      ],
+      "median_liquidated": 4.191239282380419,
+      "iqr_liquidated": [
+        3.564640550558033,
+        5.70466990636981
+      ],
+      "U": 17421165.5,
+      "p_value": 7.253147407790709e-124,
+      "rank_biserial": 0.3114681724505921,
+      "auc": 0.655734086225296,
+      "ci_low": 0.6448288701230499,
+      "ci_high": 0.6672996067477224
+    }
+  },
+  "H1_supported": true,
+  "H2_supported": true
+}

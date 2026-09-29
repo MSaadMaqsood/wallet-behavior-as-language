@@ -1,0 +1,72 @@
+{
+  "events": {
+    "SUPPLY": 1425413,
+    "WITHDRAW": 1186852,
+    "BORROW": 806744,
+    "REPAY": 655043,
+    "LIQUIDATION": 27157
+  },
+  "raw_vs_clean_rows": {
+    "SUPPLY": [
+      1425419,
+      1425413
+    ],
+    "WITHDRAW": [
+      1186852,
+      1186852
+    ],
+    "BORROW": [
+      806744,
+      806744
+    ],
+    "REPAY": [
+      655043,
+      655043
+    ],
+    "LIQUIDATION": [
+      27157,
+      27157
+    ]
+  },
+  "wallets": 217328,
+  "wallets_per_event": {
+    "SUPPLY": 190026,
+    "WITHDRAW": 165777,
+    "BORROW": 82798,
+    "REPAY": 70712,
+    "LIQUIDATION": 11513
+  },
+  "owner_source": {
+    "event": 3836982,
+    "same_tx": 134060,
+    "atoken_transfer": 122872,
+    "contract": 7295
+  },
+  "helper_contracts": 17,
+  "assets": {
+    "total": 67,
+    "STABLE": 35,
+    "VOLATILE": 32
+  },
+  "stable_share_by_event": {
+    "SUPPLY": 0.427,
+    "WITHDRAW": 0.533,
+    "BORROW": 0.806,
+    "REPAY": 0.761,
+    "LIQUIDATION": 0.917
+  },
+  "most_active_wallets": {
+    "0xd4fa2d31b7968e448877f69a96de69f5de8cd23e": 72766,
+    "0x7bc3485026ac48b6cf9baf0a377477fff5703af8": 62179,
+    "0x9008d19f58aabd9ed0d60971565aa8510560ab41": 56410,
+    "0x1f2f10d1c40777ae1da742455c65828ff36df387": 33218,
+    "0xb43f7be1cbbb7c96aeaeaff4598044052a8a2097": 23162
+  },
+  "checks": {
+    "duplicate_logs": 0,
+    "addresses_valid": true,
+    "assets_without_metadata": [],
+    "amount_missing": 0,
+    "amount_negative": 0
+  }
+}

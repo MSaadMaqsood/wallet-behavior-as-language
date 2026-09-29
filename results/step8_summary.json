@@ -1,0 +1,265 @@
+{
+  "wallets": {
+    "safe": 71285,
+    "liquidated": 10056
+  },
+  "matched_windows": {
+    "safe": 56112,
+    "liquidated": 7808
+  },
+  "patterns_compared": 584,
+  "significant_matched": 135,
+  "robust_in_both": 107,
+  "top_liquidated_matched": [
+    {
+      "ngram": "BORROW_STABLE BORROW_STABLE",
+      "z_matched": 33.454745838621136,
+      "z_full": 38.442301705727935
+    },
+    {
+      "ngram": "BORROW_STABLE BORROW_STABLE BORROW_STABLE",
+      "z_matched": 31.02355377278707,
+      "z_full": 36.39146743294521
+    },
+    {
+      "ngram": "BORROW_STABLE SUPPLY_VOL",
+      "z_matched": 21.0940754632738,
+      "z_full": 35.548980658286844
+    },
+    {
+      "ngram": "BORROW_STABLE SUPPLY_VOL BORROW_STABLE",
+      "z_matched": 18.668844696294926,
+      "z_full": 36.0386780715579
+    },
+    {
+      "ngram": "SUPPLY_VOL BORROW_STABLE BORROW_STABLE",
+      "z_matched": 16.516079665100616,
+      "z_full": 39.58820633420473
+    },
+    {
+      "ngram": "SUPPLY_VOL SUPPLY_VOL SUPPLY_VOL",
+      "z_matched": 15.064274611748841,
+      "z_full": 16.297427494913393
+    },
+    {
+      "ngram": "BORROW_STABLE BORROW_STABLE SUPPLY_VOL",
+      "z_matched": 14.649697201246331,
+      "z_full": 33.976685209680646
+    },
+    {
+      "ngram": "WITHDRAW_VOL BORROW_STABLE",
+      "z_matched": 13.278893589535349,
+      "z_full": 18.198963737775077
+    }
+  ],
+  "top_safe_matched": [
+    {
+      "ngram": "SUPPLY_STABLE BORROW_STABLE",
+      "z_matched": -16.198432670389643,
+      "z_full": -19.553980380466616
+    },
+    {
+      "ngram": "SUPPLY_VOL BORROW_STABLE REPAY_STABLE",
+      "z_matched": -14.607464538998112,
+      "z_full": -18.68474173449662
+    },
+    {
+      "ngram": "BORROW_STABLE SUPPLY_STABLE",
+      "z_matched": -12.974940166246828,
+      "z_full": -5.375264250343011
+    },
+    {
+      "ngram": "WITHDRAW_STABLE SUPPLY_STABLE",
+      "z_matched": -12.719883558513487,
+      "z_full": -16.587087556017064
+    },
+    {
+      "ngram": "SUPPLY_STABLE WITHDRAW_STABLE",
+      "z_matched": -12.385908405517174,
+      "z_full": -15.827943704067737
+    },
+    {
+      "ngram": "REPAY_STABLE WITHDRAW_STABLE",
+      "z_matched": -11.95807252378984,
+      "z_full": -24.859998497815983
+    },
+    {
+      "ngram": "SUPPLY_STABLE BORROW_STABLE SUPPLY_STABLE",
+      "z_matched": -11.795808583875132,
+      "z_full": -17.450506316730767
+    },
+    {
+      "ngram": "BORROW_STABLE REPAY_STABLE",
+      "z_matched": -11.246912149640975,
+      "z_full": -17.129324211219956
+    }
+  ],
+  "named_patterns": [
+    {
+      "pattern": "BORROW BORROW",
+      "meaning": "two borrows in a row (no repay in between)",
+      "share_liquidated_matched": 0.2492315573770492,
+      "share_safe_matched": 0.12213073852295409,
+      "odds_ratio_matched": 2.386432387977257,
+      "ci_low_matched": 2.2538466785708473,
+      "ci_high_matched": 2.5268176387215666,
+      "share_liquidated_full": 0.46847653142402546,
+      "share_safe_full": 0.30711930981272356,
+      "odds_ratio_full": 1.988459155075493,
+      "ci_low_full": 1.9061469622610565,
+      "ci_high_full": 2.074325794225948
+    },
+    {
+      "pattern": "BORROW BORROW BORROW",
+      "meaning": "three borrows in a row",
+      "share_liquidated_matched": 0.10809426229508197,
+      "share_safe_matched": 0.030546050755631594,
+      "odds_ratio_matched": 3.8473274066386045,
+      "ci_low_matched": 3.5299606287450263,
+      "ci_high_matched": 4.193227554250349,
+      "share_liquidated_full": 0.2584526650755768,
+      "share_safe_full": 0.13065862383390614,
+      "odds_ratio_full": 2.319150970319455,
+      "ci_low_full": 2.206766800193214,
+      "ci_high_full": 2.437258537088177
+    },
+    {
+      "pattern": "SUPPLY BORROW",
+      "meaning": "supply, then borrow (lever up)",
+      "share_liquidated_matched": 0.4327612704918033,
+      "share_safe_matched": 0.49565155403478756,
+      "odds_ratio_matched": 0.7763397527557198,
+      "ci_low_matched": 0.7401575753639823,
+      "ci_high_matched": 0.8142906750801338,
+      "share_liquidated_full": 0.992442322991249,
+      "share_safe_full": 0.9885950761029669,
+      "odds_ratio_full": 1.5060130765326576,
+      "ci_low_full": 1.1902209482581914,
+      "ci_high_full": 1.9055918903179587
+    },
+    {
+      "pattern": "BORROW WITHDRAW",
+      "meaning": "borrow, then take collateral out",
+      "share_liquidated_matched": 0.05315061475409836,
+      "share_safe_matched": 0.06380096948959224,
+      "odds_ratio_matched": 0.8245278740831722,
+      "ci_low_matched": 0.74274549081747,
+      "ci_high_matched": 0.9153151699270132,
+      "share_liquidated_full": 0.19182577565632458,
+      "share_safe_full": 0.19882163147927334,
+      "odds_ratio_full": 0.9566253115081469,
+      "ci_low_full": 0.90730467293212,
+      "ci_high_full": 1.0086269958917369
+    },
+    {
+      "pattern": "BORROW REPAY",
+      "meaning": "borrow, then repay",
+      "share_liquidated_matched": 0.1835297131147541,
+      "share_safe_matched": 0.2769639292842886,
+      "odds_ratio_matched": 0.5869641532651012,
+      "ci_low_matched": 0.5526702758805689,
+      "ci_high_matched": 0.6233860083560362,
+      "share_liquidated_full": 0.39051312649164677,
+      "share_safe_full": 0.6414112365855369,
+      "odds_ratio_full": 0.35822426701857685,
+      "ci_low_full": 0.3431863873082547,
+      "ci_high_full": 0.37392108261489326
+    },
+    {
+      "pattern": "REPAY BORROW",
+      "meaning": "repay, then borrow again",
+      "share_liquidated_matched": 0.12717725409836064,
+      "share_safe_matched": 0.09593313373253493,
+      "odds_ratio_matched": 1.373618128254127,
+      "ci_low_matched": 1.2778777595272663,
+      "ci_high_matched": 1.47653149779082,
+      "share_liquidated_full": 0.3005171042163882,
+      "share_safe_full": 0.2711650417338851,
+      "odds_ratio_full": 1.1548391985286983,
+      "ci_low_full": 1.103235226341621,
+      "ci_high_full": 1.2088569532726607
+    },
+    {
+      "pattern": "REPAY WITHDRAW",
+      "meaning": "repay, then take collateral out (exit)",
+      "share_liquidated_matched": 0.17789446721311475,
+      "share_safe_matched": 0.21494510978043913,
+      "odds_ratio_matched": 0.7905270370055494,
+      "ci_low_matched": 0.7434553672860008,
+      "ci_high_matched": 0.8405790363960974,
+      "share_liquidated_full": 0.292859984089101,
+      "share_safe_full": 0.7577330434172687,
+      "odds_ratio_full": 0.13242937311228614,
+      "ci_low_full": 0.1264454737755665,
+      "ci_high_full": 0.13869645420476834
+    }
+  ],
+  "examples": [
+    {
+      "wallet": "0x87cb09916d458b3a14fd0cc848ceb712d993a1da",
+      "label": 0,
+      "tokens": [
+        "SUPPLY_STABLE",
+        "WITHDRAW_STABLE",
+        "SUPPLY_STABLE",
+        "SUPPLY_STABLE",
+        "BORROW_STABLE",
+        "SUPPLY_STABLE",
+        "WITHDRAW_STABLE",
+        "REPAY_STABLE",
+        "WITHDRAW_STABLE",
+        "<EOS>"
+      ],
+      "surprise_bits": [
+        2.171850097252554,
+        2.8726693216816077,
+        1.1159143127831839,
+        2.418052890874166,
+        1.7737811901411276,
+        0.8837246757605264,
+        2.7161817686840197,
+        0.9437907241006848,
+        0.4370191121558989,
+        3.139846917508668
+      ],
+      "perplexity": 3.598219260493362,
+      "pattern": "SUPPLY_STABLE BORROW_STABLE",
+      "pattern_span": [
+        3,
+        5
+      ],
+      "pattern_note": "typical of safe wallets: in 1.8% of liquidated vs 7.6% of safe windows"
+    },
+    {
+      "wallet": "0x381355799e9172b31a85af12419b43c6b7e288ce",
+      "label": 1,
+      "tokens": [
+        "SUPPLY_VOL",
+        "BORROW_STABLE",
+        "BORROW_STABLE",
+        "SUPPLY_VOL",
+        "SUPPLY_VOL",
+        "REPAY_STABLE",
+        "WITHDRAW_VOL",
+        "<EOS>"
+      ],
+      "surprise_bits": [
+        0.3918498245623241,
+        0.6680346881067574,
+        2.904508777612681,
+        1.6272028615247385,
+        2.0781535936664337,
+        3.5291059928316972,
+        2.20545073067883,
+        2.5097515812815163
+      ],
+      "perplexity": 3.970325410026536,
+      "pattern": "BORROW_STABLE BORROW_STABLE",
+      "pattern_span": [
+        1,
+        3
+      ],
+      "pattern_note": "typical of liquidated wallets: in 23.1% of liquidated vs 10.4% of safe windows"
+    }
+  ]
+}

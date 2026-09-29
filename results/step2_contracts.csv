@@ -1,0 +1,18 @@
+address,name,wallets_served,withdraws_owned,repaired_same_tx,repaired_atoken_transfer,unresolved
+0xd01607c3c5ecaba394d8be377a08590149325722,WrappedTokenGatewayV3 (ETH gateway),57295,87117,41,87076,0
+0x893411580e590d62ddbca8a703d61cc4a8c7b2b9,WrappedTokenGatewayV3 (ETH gateway),15834,14979,5,14974,0
+0xd322a49006fc828f9b5b37ab215f99b4e5cab19c,WrappedTokenGatewayV3 (ETH gateway),12628,8993,5,8988,0
+0xa434d495249abe33e031fe71a969b81f3c07950d,WrappedTokenGatewayV3 (ETH gateway),12362,11837,3,11834,0
+0x35bb522b102326ea3f1141661df4626c87000e3e,ParaSwapRepayAdapter,11222,40479,40419,0,60
+0xadc0a53095a0af87f3aa29fe0715b5c28016364e,ParaSwapLiquiditySwapAdapter,8382,81483,81171,0,312
+0xd7852e139a7097e119623de0751ae53a61efb442,ParaSwapDebtSwapAdapterV3GHO,5354,0,0,0,0
+0xb748952c7bc638f31775245964707bcc5ddfabfc,MigrationHelperMainnet,3515,0,0,0,0
+0x02e7b8511831b1b02d9018215a0f8f500ea5c6b3,ParaSwapRepayAdapter,3324,10247,10247,0,0
+0xfb960a2deb5ca509ae2f4402696375c0991830e7,(unverified contract),1897,4957,0,0,4957
+0x8761e0370f94f68db8eaa731f4fc581f6ad0bd68,ParaSwapDebtSwapAdapterV3GHO,1725,0,0,0,0
+0x1809f186d680f239420b56948c58f8dbbcdf1e18,ParaSwapRepayAdapter,448,814,814,0,0
+0x872fbcb1b582e8cd0d0dd4327fbfa0b4c2730995,ParaSwapLiquiditySwapAdapter,326,884,884,0,0
+0x8f30adaa6950b31f675bf8a709bc23f55aa24735,ParaSwapDebtSwapAdapterV3GHO,240,0,0,0,0
+0x49d3fc00f3acf80fabcb42d7681667b20f60889a,MulticallRouter,125,0,0,0,0
+0x40b72bb73b1e9380629b205e7880fa409ae7fcc9,VaultDepositooorV2,120,0,0,0,0
+0xb746b1395105954023559d5e8149d4ce8c556646,(unverified contract),105,2437,471,0,1966

@@ -1,0 +1,8 @@
+pattern,meaning,share_liquidated_matched,share_safe_matched,odds_ratio_matched,ci_low_matched,ci_high_matched,share_liquidated_full,share_safe_full,odds_ratio_full,ci_low_full,ci_high_full
+BORROW BORROW,two borrows in a row (no repay in between),0.2492,0.1221,2.3864,2.2538,2.5268,0.4685,0.3071,1.9885,1.9061,2.0743
+BORROW BORROW BORROW,three borrows in a row,0.1081,0.0305,3.8473,3.5300,4.1932,0.2585,0.1307,2.3192,2.2068,2.4373
+SUPPLY BORROW,"supply, then borrow (lever up)",0.4328,0.4957,0.7763,0.7402,0.8143,0.9924,0.9886,1.5060,1.1902,1.9056
+BORROW WITHDRAW,"borrow, then take collateral out",0.0532,0.0638,0.8245,0.7427,0.9153,0.1918,0.1988,0.9566,0.9073,1.0086
+BORROW REPAY,"borrow, then repay",0.1835,0.2770,0.5870,0.5527,0.6234,0.3905,0.6414,0.3582,0.3432,0.3739
+REPAY BORROW,"repay, then borrow again",0.1272,0.0959,1.3736,1.2779,1.4765,0.3005,0.2712,1.1548,1.1032,1.2089
+REPAY WITHDRAW,"repay, then take collateral out (exit)",0.1779,0.2149,0.7905,0.7435,0.8406,0.2929,0.7577,0.1324,0.1264,0.1387
